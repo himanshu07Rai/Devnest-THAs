@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital@0;1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Comic Neue", cursive;
+  color: #030303;
+}
+
+h3 {
+  margin-bottom: 0;
+  word-spacing: 0.1rem;
+}
+
+fieldset {
+  display: flex;
+  width: 60%;
+  margin: auto;
+  border-style: solid;
+  border-color: black;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+legend {
+  margin: auto;
+  color: #008ffd;
+  font-size: 1.5rem;
+  padding: 0 3rem;
+  font-weight: bold;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+.cont {
+  margin-bottom: 2rem;
+}
+
+.right_item {
+  margin-bottom: 5rem;
+}
+
+/* .right {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  border-left: 3px solid #336c98;
+  padding: 0 2rem 0 3rem;
+  justify-content: space-between;
+} */
+.right {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  flex-direction: column;
+  border-left: 3px solid #336c98;
+  margin: 0 auto;
+  padding: 0 2rem 0 3rem;
+  justify-content: space-between;
+}
+
+.heads {
+  color: #004377;
+}
+
+.mini_heading {
+  font-weight: lighter;
+}
+
+.mini_heading_1 {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 600px) {
+  fieldset {
+    flex-direction: column;
+    width: 90%;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+  .right {
+    /* padding: 0 2rem 0 3rem; */
+    justify-content: center;
+    padding: 2rem 0;
+    width: 80%;
+    border-left: none;
+    border-top: 2px solid #336c98;
+    /* padding: 1rem; */
+  }
+
+  .left {
+    width: 80%;
+    padding: 2rem 0;
+  }
+}
