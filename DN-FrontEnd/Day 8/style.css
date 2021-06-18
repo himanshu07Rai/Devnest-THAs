@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#frame {
+  width: 400px;
+  height: 400px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+  background-color: red;
+}
+
+.selected {
+  /* border: 1px solid #e24e3f;
+  text-align: center;
+  cursor: pointer; */
+  background-color: #fff;
+}
+
+.grid-item {
+  border: 1px solid #e24e3f;
+  text-align: center;
+  cursor: pointer;
+}
