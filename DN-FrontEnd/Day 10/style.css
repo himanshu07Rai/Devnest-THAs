@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 820px;
+  height: 620px;
+  background-image: url("./bg2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.item {
+  cursor: pointer;
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  background-color: midnightblue;
+}
+
+.a,
+.b,
+.c,
+.d,
+.e,
+.f {
+  padding: 5px 5px;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+}
+
+.a {
+  background-image: url("https://images.amcnetworks.com/amc.com/wp-content/uploads/2015/04/cast_bb_700x1000_walter-white-lg.jpg");
+}
+.b {
+  background-image: url("https://vignette.wikia.nocookie.net/breakingbad/images/9/95/JesseS5.jpg/revision/latest?cb=20120620012441");
+}
+.c {
+  background-image: url("https://media1.popsugar-assets.com/files/thumbor/WeLUSvbAMS_GL4iELYAUzu7Bpv0/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2018/01/12/910/n/1922283/fb758e62b5daf3c9_TCDBRBA_EC011/i/RJ-Mitte-Walter-White-Jr.jpg");
+}
+.d {
+  background-image: url("https://s-i.huffpost.com/gen/1317262/images/o-ANNA-GUNN-facebook.jpg");
+}
+.e {
+  background-image: url("https://vignette.wikia.nocookie.net/breakingbad/images/b/b7/HankS5.jpg/revision/latest/scale-to-width-down/700?cb=20120620014136");
+}
+.f {
+  background-image: url("https://vignette.wikia.nocookie.net/breakingbad/images/1/10/Season_2_-_Marie.jpg/revision/latest?cb=20120617211645");
+}
+
+.solved {
+  opacity: 0;
+}
