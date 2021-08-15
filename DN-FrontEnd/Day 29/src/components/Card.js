@@ -43,6 +43,7 @@ const Card = () => {
                     </div>
                   </div>
                 </div>
+                {placeData.location.region}
               </div>
             ) : (
               <h1>Try Another city</h1>
