@@ -4,9 +4,17 @@ var morgan = require("morgan");
 app = express();
 
 app.use(morgan("dev"));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+// app.use(express.static("public"));
 
 app.get("/", (req, res) => {
   res.send("oK");
+});
+
+app.post("/", async (req, res, next) => {
+  console.log(req.body);
+  res.json(req.body);
 });
 
 app.get("/user/:id", (req, res) => {
