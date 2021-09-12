@@ -1,6 +1,10 @@
 const express = require("express");
 var morgan = require("morgan");
 
+// form data
+const multer = require("multer");
+const upload = multer();
+
 app = express();
 
 app.use(morgan("dev"));
@@ -13,6 +17,11 @@ app.get("/", (req, res) => {
 });
 
 app.post("/", async (req, res, next) => {
+  console.log(req.body);
+  res.json(req.body);
+});
+
+app.post("/", upload.none(), async (req, res, next) => {
   console.log(req.body);
   res.json(req.body);
 });
